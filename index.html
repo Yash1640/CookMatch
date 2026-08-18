@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookMatch</title>
+</head>
+
+<body class="bg-gray-100">
+
+  <nav>
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <h1 class="text-2xl text-orange-500">
+            CookMatch
+        </h1>
+
+        <div class="flex gap-6">
+            <a href="#" class="text-orange-500">
+                Share Recipes
+            </a>
+
+            <a href="#" class="text-orange-500">
+                Login
+            </a>
+        </div>
+
+    </div>
+</nav>
+    <section class="text-center py-16 px-6">
+
+        <h2 class="text-4xl">
+            What can you cook?
+        </h2>
+
+        <p>
+            Find recipes using the ingredients you already have.
+        </p>
+
+        <button id="findRecipes"
+            class="mt-6 bg-orange-500 text-white px-6 py-3">
+            Find Recipes
+        </button>
+
+        <p id="result" class="mt-4"></p>
+
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 pb-12">
+
+        <h2 class="text-2xl mb-6">
+            My Ingredients
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+            <div class="ingredient p-5 text-center">
+                <p>Egg</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Tomato</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Onion</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Cheese</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Bread</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Potato</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Rice</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Chicken</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Carrot</p>
+            </div>
+
+            <div class="ingredient p-5 text-center">
+                <p>Spinach</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 pb-16">
+
+        <h2 class="text-2xl mb-6">
+            Recipes You Can Make
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <div class="recipe p-6" data-ingredients="egg,tomato,onion,cheese">
+
+                <h3 class="text-xl">
+                    Omelette
+                </h3>
+
+                <p>
+                    Egg, tomato, onion and cheese.
+                </p>
+
+                <button class="mt-4 text-orange-500">
+                    View Recipe
+                </button>
+
+            </div>
+
+            <div class="recipe p-6" data-ingredients="bread,tomato,cheese">
+
+                <h3 class="text-xl">
+                    Tomato Sandwich
+                </h3>
+
+                <p>
+                    Bread, tomato and cheese.
+                </p>
+
+                <button class="mt-4 text-orange-500">
+                    View Recipe
+                </button>
+
+            </div>
+
+            <div class="recipe p-6" data-ingredients="rice,chicken,onion,carrot">
+
+                <h3 class="text-xl">
+                    Chicken Rice
+                </h3>
+
+                <p>
+                    Rice, chicken, onion and carrot.
+                </p>
+
+                <button class="mt-4 text-orange-500">
+                    View Recipe
+                </button>
+
+            </div>
+
+            <div class="recipe p-6" data-ingredients="potato,egg,onion,spinach">
+
+                <h3 class="text-xl">
+                    Potato Egg
+                </h3>
+
+                <p>
+                    Potato, egg, onion and spinach.
+                </p>
+
+                <button class="mt-4 text-orange-500">
+                    View Recipe
+                </button>
+
+            </div>
+
+            <div class="recipe p-6" data-ingredients="rice,tomato,onion,carrot,spinach">
+
+                <h3 class="text-xl">
+                    Vegetable Rice
+                </h3>
+
+                <p>
+                    Rice, tomato, onion, carrot and spinach.
+                </p>
+
+                <button class="mt-4 text-orange-500">
+                    View Recipe
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
