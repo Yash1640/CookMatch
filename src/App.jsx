@@ -85,23 +85,31 @@ function App() {
       </nav>
 
       <section className="text-center py-16 px-6 max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900">What can you cook?</h2>
+        <div className="hero-copy">
+          <h2 className="text-4xl font-bold text-gray-900">What can you cook?</h2>
 
-        <p className="mt-4 text-lg text-gray-700">
-          Find recipes using the ingredients you already have.
-        </p>
+          <p className="mt-4 text-lg text-gray-700">
+            Find recipes using the ingredients you already have.
+          </p>
 
-        <button
-          type="button"
-          onClick={findRecipes}
-          className="mt-8 bg-orange-500 text-white font-semibold px-8 py-3 rounded-full cursor-pointer"
-        >
-          Find Recipes
-        </button>
+          <button
+            type="button"
+            onClick={findRecipes}
+            className="mt-8 bg-orange-500 text-white font-semibold px-8 py-3 rounded-full cursor-pointer"
+          >
+            Find Recipes
+          </button>
 
-        <p className="mt-4 font-medium text-orange-600">
-          {selectedIngredients.length} ingredient(s) selected.
-        </p>
+          <p className="mt-4 font-medium text-orange-600">
+            {selectedIngredients.length} ingredient(s) selected.
+          </p>
+        </div>
+
+        <img
+          className="hero-image"
+          src="/bowl.png"
+          alt="A colorful bowl of fresh ingredients"
+        />
       </section>
 
       <section className="max-w-4xl mx-auto px-6 pb-12">
@@ -189,12 +197,7 @@ function App() {
               </ul>
             </div>
           </div>
-
           <hr className="my-6 border-gray-200" />
-
-          <p className="text-center text-sm text-gray-500">
-            Copyright 2026 CookMatch. All rights reserved.
-          </p>
         </div>
       </footer>
     </>

@@ -74,10 +74,19 @@ section {
 
 section.text-center {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
+  align-items: center;
+  column-gap: 40px;
   max-width: 1000px;
   padding: 92px 0 70px;
   text-align: left;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 440px;
+  justify-self: end;
+  padding-right: 24px;
 }
 
 section.text-center h2 {
@@ -265,7 +274,15 @@ footer .text-center {
   }
 
   section.text-center {
+    grid-template-columns: 1fr;
     padding: 64px 0 52px;
+  }
+
+  .hero-image {
+    justify-self: center;
+    max-width: 360px;
+    margin-top: 42px;
+    padding-right: 0;
   }
 
   section.text-center h2 {
