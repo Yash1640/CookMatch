@@ -74,10 +74,10 @@ function App() {
           <h1 className="text-2xl font-bold text-orange-500">CookMatch</h1>
 
           <div className="flex gap-6 font-medium text-sm">
-            <a href="#" className="text-gray-700 hover:text-orange-500">
+            <a href="#" className="text-gray-700">
               Share Recipes
             </a>
-            <a href="#" className="text-orange-500 hover:text-orange-600">
+            <a href="#" className="text-orange-500">
               Login
             </a>
           </div>
@@ -94,7 +94,7 @@ function App() {
         <button
           type="button"
           onClick={findRecipes}
-          className="mt-8 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full cursor-pointer"
+          className="mt-8 bg-orange-500 text-white font-semibold px-8 py-3 rounded-full cursor-pointer"
         >
           Find Recipes
         </button>
@@ -149,7 +149,7 @@ function App() {
                 </div>
                 <button
                   type="button"
-                  className="mt-6 text-orange-500 hover:text-orange-600 font-semibold text-sm self-start cursor-pointer"
+                  className="mt-6 text-orange-500 font-semibold text-sm self-start cursor-pointer"
                 >
                   View Recipe &rarr;
                 </button>
@@ -172,20 +172,20 @@ function App() {
             <div>
               <h3 className="font-semibold text-gray-900">Quick Links</h3>
               <ul className="mt-2 space-y-1 text-sm text-gray-600">
-                <li><a href="#" className="hover:text-orange-500">Home</a></li>
-                <li><a href="#" className="hover:text-orange-500">Recipes</a></li>
-                <li><a href="#" className="hover:text-orange-500">Share Recipe</a></li>
-                <li><a href="#" className="hover:text-orange-500">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Share Recipe</a></li>
+                <li><a href="#">About</a></li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-semibold text-gray-900">Follow Us</h3>
               <ul className="mt-2 space-y-1 text-sm text-gray-600">
-                <li><a href="#" className="hover:text-orange-500">Instagram</a></li>
-                <li><a href="#" className="hover:text-orange-500">Facebook</a></li>
-                <li><a href="#" className="hover:text-orange-500">YouTube</a></li>
-                <li><a href="#" className="hover:text-orange-500">X (Twitter)</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">X (Twitter)</a></li>
               </ul>
             </div>
           </div>
